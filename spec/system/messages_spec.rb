@@ -26,6 +26,7 @@ RSpec.describe 'メッセージ投稿機能', type: :system do
   end
 
   context '投稿に成功したとき' do
+    it 'テキストの投稿に成功すると、投稿一覧に遷移して、投稿した内容が表示されている' do
       # サインインする
       sign_in(@room_user.user)
 
